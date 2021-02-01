@@ -53,7 +53,7 @@ import org.junit.runner.RunWith;
 /**
  * @tpSubChapter Resteasy-client
  * @tpChapter Client throws ResteasyWebApplicationException on server side
- * @tpSince RESTEasy 4.6.0.Final
+ * @tpSince RESTEasy 4.6.0.Final-starling
  * @tpTestCaseDetails Test WebApplicationExceptions and WebApplicationExceptionWrappers in various circumstances
  */
 @RunWith(Arquillian.class)
@@ -185,7 +185,7 @@ public class ClientWebApplicationExceptionTest {
     *                WebApplicationException will occur. That WebApplicationException should match the WebApplicationException
     *                thrown by oldException().
     *
-    * @tpSince RESTEasy 4.6.0.Final
+    * @tpSince RESTEasy 4.6.0.Final-starling
     */
    @Test
    public void testOldExceptionsDirectly() {
@@ -213,7 +213,7 @@ public class ClientWebApplicationExceptionTest {
     *  @tpTestDetails For each ResteasyWebApplicationException in newExceptions, calls the resource method newException() to throw
     *                 that ResteasyWebApplicationException. Since it is running on the client side, the standard behavior of throwing a
     *                 WebApplicationException will occur. That WebApplicationException should match the result returned by newException()
-    * @tpSince RESTEasy 4.6.0.Final
+    * @tpSince RESTEasy 4.6.0.Final-starling
     */
    @Test
    public void testNewExceptionsDirectly() throws Exception {
@@ -251,7 +251,7 @@ public class ClientWebApplicationExceptionTest {
     *                 5. The client side Client constructs and throws a WebApplicationException which is checked against the matching
     *                    WebApplicationException in oldExceptins.
     *
-    * @tpSince RESTEasy 4.6.0.Final
+    * @tpSince RESTEasy 4.6.0.Final-starling
     */
    @Test
    public void testNoCatchOldBehaviorOldExceptions() throws Exception {
@@ -296,7 +296,7 @@ public class ClientWebApplicationExceptionTest {
     *                5. The client side Client constructs and throws a WebApplicationException which is checked for a sanitized
     *                   Response and matching status.
     *
-    * @tpSince RESTEasy 4.6.0.Final
+    * @tpSince RESTEasy 4.6.0.Final-starling
     */
    @Test
    public void testNoCatchOldBehaviorNewExceptions() throws Exception {
@@ -339,7 +339,7 @@ public class ClientWebApplicationExceptionTest {
     *                4. The client side Client constructs and throws a WebApplicationException which is checked for a sanitized
     *                   Response and matching status.
     *
-    * @tpSince RESTEasy 4.6.0.Final
+    * @tpSince RESTEasy 4.6.0.Final-starling
     */
    @Test
    public void testNoCatchNewBehaviorOldExceptions() throws Exception {
@@ -372,7 +372,7 @@ public class ClientWebApplicationExceptionTest {
     *                4. The client side Client constructs and throws a WebApplicationException which is checked for a sanitized
     *                   Response and matching status.
     *
-    * @tpSince RESTEasy 4.6.0.Final
+    * @tpSince RESTEasy 4.6.0.Final-starling
     */
    @Test
    public void testNoCatchNewBehaviorNewExceptions() throws Exception {
@@ -413,7 +413,7 @@ public class ClientWebApplicationExceptionTest {
     *                5. The client side Client constructs and throws a WebApplicationException which is checked against the matching
     *                   WebApplicationException in oldExceptins.
     *
-    * @tpSince RESTEasy 4.6.0.Final
+    * @tpSince RESTEasy 4.6.0.Final-starling
     */
    @Test
    public void testCatchOldBehaviorOldExceptions() throws Exception {
@@ -458,7 +458,7 @@ public class ClientWebApplicationExceptionTest {
     *                5. The client side Client constructs and throws a WebApplicationException which is verified to have
     *                   matching status, no added headers, and an empty entity.
     *
-    * @tpSince RESTEasy 4.6.0.Final
+    * @tpSince RESTEasy 4.6.0.Final-starling
     */
    @Test
    public void testCatchOldBehaviorNewExceptions() throws Exception {
@@ -500,7 +500,7 @@ public class ClientWebApplicationExceptionTest {
     *                4. The client side Client constructs and throws a WebApplicationException which is checked for a sanitized
     *                   Response and matching status.
     *
-    * @tpSince RESTEasy 4.6.0.Final
+    * @tpSince RESTEasy 4.6.0.Final-starling
     */
    @Test
    public void testCatchNewBehaviorOldExceptions() throws Exception {
@@ -535,7 +535,7 @@ public class ClientWebApplicationExceptionTest {
     *                4. The client side Client constructs and throws a WebApplicationException which is checked for a sanitized
     *                   Response and matching status.
     *
-    * @tpSince RESTEasy 4.6.0.Final
+    * @tpSince RESTEasy 4.6.0.Final-starling
     */
    @Test
    public void testCatchNewBehaviorNewExceptions() throws Exception {
